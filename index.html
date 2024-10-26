@@ -15,7 +15,7 @@
         }
 
         header {
-            background: #ff0000; /* YouTube red */
+            background: #007bff;
             color: #fff;
             padding: 30px 20px;
             text-align: center;
@@ -53,7 +53,7 @@
         }
 
         nav ul li a:hover {
-            color: #ffc107; /* Gold */
+            color: #ffc107;
         }
 
         section {
@@ -98,8 +98,22 @@
         }
 
         .video-container {
-            margin: 15px 0;
-            text-align: center;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default border */
         }
 
         .button {
@@ -175,10 +189,10 @@
         <div class="portfolio">
             <h3>Mesin Pakan Otomatis</h3>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/N7aNDkxx_1M?si=S8NJDYbR39b-2y5M" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Deskripsi singkat proyek ini. Saya mengerjakan Mesin Pakan Otomatis menggunakan Arduino Uno.</p>
+                <iframe src="https://www.youtube.com/embed/ly36kn0ug4k?si=B-XdMBQzn26oFhsB" 
+                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <p>Deskripsi singkat proyek ini. Saya mengerjakan Mesin Pakan Otomatis menggunakan Arduino Uno.</p>
         </div>
     </section>
 
